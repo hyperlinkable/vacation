@@ -3,5 +3,9 @@
 }
 
 #reco {
-  display:none
+  display:none;
+}
+
+#intro {
+  background-color:lightblue;
 }

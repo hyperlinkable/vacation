@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 // Click to begin survey, hide start button, and show survey form
   $("button#startSurvey").click(function() {
     $("button#startSurvey").hide();
@@ -12,12 +13,14 @@ $(document).ready(function() {
 
 // Identify form input variables
     var nameInput = $("input#name").val();
+    var ageInput = $("input#age").val();
 
 // Logic to determine recommendations
 
 
 // Inject form input variables into recommendation text
     $(".name").text(nameInput);
+    $(".age").text(ageInput);
 
 // Show recommended destination and image
 
