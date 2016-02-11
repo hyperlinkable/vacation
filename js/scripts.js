@@ -15,12 +15,30 @@ $(document).ready(function() {
     var nameInput = $("input#name").val();
     var ageInput = $("input#age").val();
 
-// Logic to determine recommendations
+// ----- START LOGIC FOR RECOMMENDATIONS -------
+  // send children to Disneyland and old people to Vermont
+    if (ageInput < 15) {
+      var destinationReco = "DisneyLand";
+      }
+      else if (ageInput > 70) {
+        var destinationReco = "Vermont";
+      }
+      else
+        var destinationReco = "Undefined";
 
+// ----- END LOGIC FOR RECOMMENDATIONS -------
+
+
+// Log answers to console for debug. COMMENT OUT IN PRODUCTION
+    console.log("FormResponse: Age = " + ageInput);
+    console.log("FormResponse: Name = " + nameInput);
 
 // Inject form input variables into recommendation text
     $(".name").text(nameInput);
     $(".age").text(ageInput);
+    $(".destination").text(destinationReco);
+
+
 
 // Show recommended destination and image
 
