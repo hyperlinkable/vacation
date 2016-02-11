@@ -8,7 +8,27 @@
     <title>TITLE</title>
   </head>
   <body>
+    <div class="container" id="intro">
+      <h1>Choose your own adventure!</h1>
+      <p>Welcome to the adventure selector! Answer a few questions and receive your personalized vacation recommendation!<p>
+        <button type="button" class="btn btn-primary" id="startSurvey">Begin Survey</button>
+    </div>
 
+    <div class="container" id="survey">
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <button type="submit" class="btn btn-warning">Get your Recommendation!</button>
+      </form>
+    </div>
+
+    <div class="container" id="reco">
+      <h1>Your personalized travel recommendation</h1>
+      <p>your name is <span class="name"></span></p>
+    </div>
 
 
   </body>
