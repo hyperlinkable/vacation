@@ -57,27 +57,38 @@ $(document).ready(function() {
       if (destinationReco==="Oregon" && weatherInput==="Warm & Sunny") {
         var destinationReco = "Hood River";
         $("#oregon").show();
-        $(".oregonImage").append("<img src='img/hoodriver.jpg'>");
+        $(".oregonImage").append("<img class='img-responsive' src='img/hoodriver.jpg'>");
+        $(".oregonURL").append("<a href='http://traveloregon.com/cities-regions/hood-river/'>Click for more info about " + destinationReco +"</a>");
           }
         else if (destinationReco==="Oregon" && weatherInput==="Cold & Snowy") {
           var destinationReco = "Mount Hood";
-          $("#mounthood").show();
+          $("#oregon").show();
+          $(".oregonImage").append("<img class='img-responsive' src='img/mounthood.jpg'>");
+          $(".oregonURL").append("<a href='http://traveloregon.com/cities-regions/mt-hood-the-gorge/'>Click for more info about " + destinationReco +"</a>");
             }
         else if (destinationReco==="Oregon" && weatherInput==="Hot & Dry") {
           var destinationReco = "Eastern Oregon";
-          $("#easternoregon").show();
+          $("#oregon").show();
+          $(".oregonImage").append("<img class='img-responsive' src='img/easternoregon.jpg'>");
+          $(".oregonURL").append("<a href='http://traveloregon.com/cities-regions/eastern-oregon/'>Click for more info about " + destinationReco +"</a>");
             }
         else if (destinationReco==="Oregon" && weatherInput==="Cool & Rainy" && activitiesInput==="Skiing") {
           var destinationReco = "Mount Hood";
-          $("#mounthood").show();
+          $("#oregon").show();
+          $(".oregonImage").append("<img class='img-responsive' src='img/mounthood.jpg'>");
+          $(".oregonURL").append("<a href='http://traveloregon.com/cities-regions/mt-hood-the-gorge/'>Click for more info about " + destinationReco +"</a>");
             }
         else if (destinationReco==="Oregon" && weatherInput==="Cool & Rainy" && activitiesInput==="Surfing") {
           var destinationReco = "Oregon Coast";
-          $("#oregoncoast").show();
+          $("#oregon").show();
+          $(".oregonImage").append("<img class='img-responsive' src='img/oregoncoast.jpg'>");
+          $(".oregonURL").append("<a href='http://traveloregon.com/cities-regions/oregon-coast/'>Click for more info about " + destinationReco +"</a>");
             }
         else if (destinationReco==="Oregon" && weatherInput==="Cool & Rainy") {
           var destinationReco = "Portland";
-          $("#portland").show();
+          $("#oregon").show();
+          $(".oregonImage").append("<img class='img-responsive' src='img/portland.jpg'>");
+          $(".oregonURL").append("<a href='http://traveloregon.com/cities-regions/greater-portland/'>Click for more info about " + destinationReco +"</a>");
             }
 
 
