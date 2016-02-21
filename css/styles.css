@@ -25,3 +25,8 @@
 #getReco {
    margin-top:20px;
 }
+
+.form-group.required .form-label:after{
+  content: "*";
+  color:red;
+}
