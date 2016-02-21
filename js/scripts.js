@@ -23,6 +23,7 @@ $(document).ready(function() {
 
     var nameInput = $("input#name").val()
     var ageInput = parseInt($("input#age").val());
+    var weatherInput = $("input#weather").val();
 
 // ----- START LOGIC FOR RECOMMENDATIONS -------
   // send children to Disneyland and old people to Vermont
@@ -41,6 +42,7 @@ $(document).ready(function() {
 // Log answers to console for debug. COMMENT OUT IN PRODUCTION
     console.log("FormResponse: Age = " + ageInput);
     console.log("FormResponse: Name = " + nameInput);
+    console.log("FormResponse: Weather = " + weatherInput);
 
 // Inject form input variables into recommendation text
     // questions.forEach(function(response) {
@@ -49,6 +51,7 @@ $(document).ready(function() {
 
     $(".name").text(nameInput);
     $(".age").text(ageInput);
+    $(".weather").text(weatherInput);
     $(".destination").text(destinationReco);
 
 
