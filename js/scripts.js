@@ -3,6 +3,7 @@ $(document).ready(function() {
 // Click to begin survey, hide start button, and show survey form
   $("button#startSurvey").click(function() {
     $("button#startSurvey").hide();
+    $(".jumbotron img").hide();
     $("#survey").show();
   });
 
@@ -23,9 +24,15 @@ $(document).ready(function() {
 
     var nameInput = $("input#name").val()
     var ageInput = parseInt($("input#age").val());
-    var weatherInput = $("input#weather").val();
+    var weatherInput = $("select#weather").val();
 
 // ----- START LOGIC FOR RECOMMENDATIONS -------
+  // adapt for anonymous form entry
+    if (nameInput == null || nameInput == "") {
+      nameInput = "Sir or Madam";
+    }
+
+
   // send children to Disneyland and old people to Vermont
     if (ageInput < 15) {
       var destinationReco = "DisneyLand";

@@ -7,8 +7,9 @@
 }
 
 #intro {
-  background-color:lightblue;
+  background-color:#E8E974;
 }
+
 
 #reco h1 {
   font-style:oblique;
@@ -20,6 +21,10 @@
   color:orange;
   font-weight: bold;
 
+}
+
+.jumbotron img {
+  max-height: 300px;
 }
 
 #getReco {

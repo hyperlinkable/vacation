@@ -10,8 +10,9 @@
   <body>
       <div class="jumbotron" id="intro">
         <div class="container">
-          <h1>Choose Your Next Adventure</h1>
-          <p>Welcome to the Vacation Robot! Answer a few questions and receive your personalized travel recommendation.</p>
+          <img src="img/futurama.jpg" class="img-responsive" alt="robots on a cruise ship">
+          <h1>Welcome to the Vacation Robot</h1>
+          <p>Answer a few questions and receive your personalized travel recommendation.</p>
           <button type="button" class="btn btn-primary btn-lg" id="startSurvey">Begin Survey</button>
         </div>
       </div>
@@ -19,9 +20,9 @@
     <div class="container" id="survey">
       <form>
         <div class="col-md-4">
-          <div class="form-group required">
+          <div class="form-group">
             <label for="name" class="form-label">Your Name</label>
-            <input id="name" class="form-control" type="text" required>
+            <input id="name" class="form-control" type="text">
           </div>
           <div class="form-group required">
             <label for="age" class="form-label">Your Age</label>
@@ -29,11 +30,11 @@
           </div>
           <div class="form-group required">
             <label for="weather" class="form-label">What Kind of Weather do you Like?</label>
-            <input id="weather" class="form-control" list="weatherSelect" required>
-              <datalist id="weatherSelect">
-                <option value="Hot & Sunny">
-                <option value="Cold & Snowy">
-              </datalist>
+            <select id="weather" class="form-control" autocomplete="off" required>
+              <option></option>
+              <option>Hot & Sunny</option>
+              <option>Cold & Snowy</option>
+            </select>
           </div>
 
           <button type="submit" id="getReco" class="btn btn-warning btn-lg">Get your Recommendation!</button>
@@ -44,7 +45,7 @@
     </div>
 
     <div class="container" id="reco">
-      <h1>YOUR PERSONALIZED TRAVEL RECOMMENDATION</h1>
+      <h1>******** YOUR PERSONALIZED TRAVEL RECOMMENDATION ********</h1>
       <h2>Bon Voyage, <span class="name"></span>!</h2>
       <p>Since your age is <span class="age"></span> and you like <span class="weather"></span> weather...</p>
       <p>The Vacation Robot recommends you visit lovely <span class="destination"></span>!
