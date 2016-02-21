@@ -2,9 +2,7 @@
   display:none;
 }
 
-#reco {
-  display:none;
-}
+
 
 #intro {
   background-color:#E8E974;
@@ -34,4 +32,56 @@
 .form-group.required .form-label:after{
   content: "*";
   color:red;
+}
+
+#reco {
+  display:none;
+}
+
+/*.recoLocation {
+  display:none;
+}*/
+
+#nocoffee {
+  display:none;
+}
+
+#hoodriver {
+  display:none;
+}
+
+#safety {
+  display:none;
+}
+
+#ashland {
+  display:none;
+}
+
+#easternoregon {
+  display:none;
+}
+
+#mounthood {
+  display:none;
+}
+
+#portland {
+  display:none;
+}
+
+#oregoncoast {
+  display:none;
+}
+
+#kids {
+  display:none;
+}
+
+#oregon {
+  display:none;
+}
+
+.recoLocation img {
+  max-height: 300px;
 }

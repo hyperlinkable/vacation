@@ -26,7 +26,7 @@
           </div>
           <div class="form-group required">
             <label for="age" class="form-label">Your Age</label>
-            <input id="age" class="form-control" type="number" min="1" max="120" required>
+            <input id="age" class="form-control" type="number" autocomplete="off" min="1" max="120" required>
           </div>
           <div class="form-group required">
             <label for="weather" class="form-label">What kind of weather do you prefer?</label>
@@ -60,12 +60,38 @@
       <h1>******** YOUR PERSONALIZED TRAVEL RECOMMENDATION ********</h1>
       <h2>Bon Voyage, <span class="name"></span>!</h2>
       <p>Because you are <span class="age"></span> years old and you like to spend your time <span class="activities"></span> in <span class="weather"></span> weather...</p>
-      <p>The Vacation Robot recommends you visit lovely <span class="destination"></span>!
-        <!-- BEGIN RECOMMENDATIONS -->
-
-
-
     </div>
+
+        <!-- BEGIN RECOMMENDATIONS -->
+    <div class="recoLocation">
+    <div class="container">
+      <div id="nocoffee">
+        <p>The Vacation Robot suggests that children should not drink coffee!</p>
+        <img src="img/coffeekids.png">
+      </div>
+
+      <div id="kids">
+        <p>The Vacation Robot would like to remind you that you will probably not be doing any solo travel for a few years -- you're probably going wherever your parents go!</p>
+        <img src="img/kids.jpg">
+      </div>
+
+      <div id="safety">
+        <p>The Vacation Robot would like to request that you exercise caution when participating in these sports at your age!</p>
+        <img src="img/elderly.jpg">
+      </div>
+
+      <div id="ashland">
+        <p>The Vacation Robot recommends that you might want to think about retiring in lovely Ashland, Oregon!</p>
+        <img src="img/ashland.jpg">
+      </div>
+
+      <div id="oregon">
+        <p>The Vacation Robot recommends that you visit lovely <span class="destination"></span></p>
+        <div class="oregonImage"></div>
+      </div>
+    </div>
+    </div>
+
 
 
   </body>

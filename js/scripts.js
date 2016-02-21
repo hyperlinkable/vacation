@@ -33,16 +33,53 @@ $(document).ready(function() {
       nameInput = "Sir or Madam";
     }
 
+  // age prescan with exceptions for kids & elderly
+    if (ageInput < 16 && activitiesInput==="Drinking Coffee") {
+        var destinationReco = "ERROR: nocoffee";
+        $("#nocoffee").show();
+          }
+      else if (ageInput < 16) {
+        var destinationReco = "ERROR: kids";
+        $("#kids").show();
+        }
+      else if (ageInput > 75 && (activitiesInput==="Skiing" || activitiesInput==="Surfing")) {
+        var destinationReco = "ERROR: safety";
+        $("#safety").show();
+        }
+      else if (ageInput > 75) {
+        var destinationReco = "Ashland";
+        $("#ashland").show();
+        }
+      else if (ageInput < 75 && ageInput > 16) {
+        var destinationReco = "Oregon";
+        }
 
-  // send children to Disneyland and old people to Vermont
-    if (ageInput < 15) {
-      var destinationReco = "DisneyLand";
-      }
-      else if (ageInput > 70) {
-        var destinationReco = "Vermont";
-      }
-      else
-        var destinationReco = "Undefined";
+      if (destinationReco==="Oregon" && weatherInput==="Warm & Sunny") {
+        var destinationReco = "Hood River";
+        $("#oregon").show();
+        $(".oregonImage").append("<img src='img/hoodriver.jpg'>");
+          }
+        else if (destinationReco==="Oregon" && weatherInput==="Cold & Snowy") {
+          var destinationReco = "Mount Hood";
+          $("#mounthood").show();
+            }
+        else if (destinationReco==="Oregon" && weatherInput==="Hot & Dry") {
+          var destinationReco = "Eastern Oregon";
+          $("#easternoregon").show();
+            }
+        else if (destinationReco==="Oregon" && weatherInput==="Cool & Rainy" && activitiesInput==="Skiing") {
+          var destinationReco = "Mount Hood";
+          $("#mounthood").show();
+            }
+        else if (destinationReco==="Oregon" && weatherInput==="Cool & Rainy" && activitiesInput==="Surfing") {
+          var destinationReco = "Oregon Coast";
+          $("#oregoncoast").show();
+            }
+        else if (destinationReco==="Oregon" && weatherInput==="Cool & Rainy") {
+          var destinationReco = "Portland";
+          $("#portland").show();
+            }
+
 
 // ----- END LOGIC FOR RECOMMENDATIONS -------
 
@@ -52,6 +89,7 @@ $(document).ready(function() {
     console.log("FormResponse: Name = " + nameInput);
     console.log("FormResponse: Weather = " + weatherInput);
     console.log("FormResponse: Activities = " + activitiesInput);
+    console.log("Recommendation: destinationReco = " + destinationReco);
 
 // Inject form input variables into recommendation text
     // questions.forEach(function(response) {
