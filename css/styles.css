@@ -9,3 +9,19 @@
 #intro {
   background-color:lightblue;
 }
+
+#reco h1 {
+  font-style:oblique;
+  font-size: large;
+}
+
+
+#reco h2 {
+  color:orange;
+  font-weight: bold;
+
+}
+
+#getReco {
+   margin-top:20px;
+}

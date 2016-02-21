@@ -11,30 +11,34 @@
       <div class="jumbotron" id="intro">
         <div class="container">
           <h1>Choose Your Next Adventure</h1>
-          <p>Welcome to the vacation robot! Answer a few questions and receive your personalized travel recommendation.</p>
+          <p>Welcome to the Vacation Robot! Answer a few questions and receive your personalized travel recommendation.</p>
           <button type="button" class="btn btn-primary btn-lg" id="startSurvey">Begin Survey</button>
         </div>
       </div>
 
     <div class="container" id="survey">
       <form>
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input id="name" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="age">Your Age</label>
-          <input id="age" class="form-control" type="text">
-        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="age">Your Age</label>
+            <input id="age" class="form-control" type="text">
+          </div>
+          <button type="submit" id="getReco" class="btn btn-warning btn-lg">Get your Recommendation!</button>
+        </form>
+      </div>
 
-        <button type="submit" class="btn btn-warning btn-lg">Get your Recommendation!</button>
-      </form>
+
     </div>
 
     <div class="container" id="reco">
-      <h1>Your Personalized Travel Recommendation</h1>
-      <p>Your name is <span class="name"></span> and your age is <span class="age"></span></p>.
-      <p>You should probably go to <span class="destination"></span>!
+      <h1>YOUR PERSONALIZED TRAVEL RECOMMENDATION</h1>
+      <h2>Bon Voyage, <span class="name"></span>!</h2>
+      <p>Since your age is <span class="age"></span> and you like to...</p>
+      <p>The Vacation Robot recommends you visit lovely <span class="destination"></span>!
     </div>
 
 

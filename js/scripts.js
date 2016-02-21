@@ -10,10 +10,19 @@ $(document).ready(function() {
   $("#survey form").submit(function(event) {
     $("#survey").hide();
     $("#reco").show();
+  // debugger;
 
-// Identify form input variables
-    var nameInput = $("input#name").val();
-    var ageInput = $("input#age").val();
+// Identify form input variables. Looping doesn't work here?
+    // var responses = ["name","age"];
+    // questions.forEach(function(response) {
+    //   // var userInput = $("input#" + response).val();
+    //   // var (response + "Input") = $("input#" + response).val();
+    //   // $("." + response).text(userInput);
+    //   // console.log("Form Response for " + "is " + response)
+    // });
+
+    var nameInput = $("input#name").val()
+    var ageInput = parseInt($("input#age").val());
 
 // ----- START LOGIC FOR RECOMMENDATIONS -------
   // send children to Disneyland and old people to Vermont
@@ -34,6 +43,10 @@ $(document).ready(function() {
     console.log("FormResponse: Name = " + nameInput);
 
 // Inject form input variables into recommendation text
+    // questions.forEach(function(response) {
+    //   $("." + response).text(userInput);
+    // });
+
     $(".name").text(nameInput);
     $(".age").text(ageInput);
     $(".destination").text(destinationReco);
