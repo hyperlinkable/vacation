@@ -25,6 +25,7 @@ $(document).ready(function() {
     var nameInput = $("input#name").val()
     var ageInput = parseInt($("input#age").val());
     var weatherInput = $("select#weather").val();
+    var activitiesInput = $("select#activities").val();
 
 // ----- START LOGIC FOR RECOMMENDATIONS -------
   // adapt for anonymous form entry
@@ -50,6 +51,7 @@ $(document).ready(function() {
     console.log("FormResponse: Age = " + ageInput);
     console.log("FormResponse: Name = " + nameInput);
     console.log("FormResponse: Weather = " + weatherInput);
+    console.log("FormResponse: Activities = " + activitiesInput);
 
 // Inject form input variables into recommendation text
     // questions.forEach(function(response) {
@@ -59,6 +61,7 @@ $(document).ready(function() {
     $(".name").text(nameInput);
     $(".age").text(ageInput);
     $(".weather").text(weatherInput);
+    $(".activities").text(activitiesInput);
     $(".destination").text(destinationReco);
 
 

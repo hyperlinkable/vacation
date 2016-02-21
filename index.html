@@ -29,26 +29,42 @@
             <input id="age" class="form-control" type="number" min="1" max="120" required>
           </div>
           <div class="form-group required">
-            <label for="weather" class="form-label">What Kind of Weather do you Like?</label>
+            <label for="weather" class="form-label">What kind of weather do you prefer?</label>
             <select id="weather" class="form-control" autocomplete="off" required>
               <option></option>
-              <option>Hot & Sunny</option>
+              <option>Warm & Sunny</option>
               <option>Cold & Snowy</option>
+              <option>Hot & Dry</option>
+              <option>Cool & Rainy</option>
+            </select>
+          </div>
+          <div class="form-group required">
+            <label for="activities" class="form-label">Which of the following activities do you like?</label>
+            <select id="activities" class="form-control" autocomplete="off" required>
+              <option></option>
+              <option>Skiing</option>
+              <option>Surfing</option>
+              <option>Hiking</option>
+              <option>Surviving</option>
+              <option>Drinking Coffee</option>
             </select>
           </div>
 
           <button type="submit" id="getReco" class="btn btn-warning btn-lg">Get your Recommendation!</button>
+
         </form>
       </div>
-
-
     </div>
 
     <div class="container" id="reco">
       <h1>******** YOUR PERSONALIZED TRAVEL RECOMMENDATION ********</h1>
       <h2>Bon Voyage, <span class="name"></span>!</h2>
-      <p>Since your age is <span class="age"></span> and you like <span class="weather"></span> weather...</p>
+      <p>Because you are <span class="age"></span> years old and you like to spend your time <span class="activities"></span> in <span class="weather"></span> weather...</p>
       <p>The Vacation Robot recommends you visit lovely <span class="destination"></span>!
+        <!-- BEGIN RECOMMENDATIONS -->
+
+
+
     </div>
 
 
