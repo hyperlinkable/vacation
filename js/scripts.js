@@ -34,19 +34,19 @@ $(document).ready(function() {
     }
 
   // age prescan with exceptions for kids & elderly
-    if (ageInput < 16 && activitiesInput==="Drinking Coffee") {
+    if (ageInput <= 16 && activitiesInput==="Drinking Coffee") {
         var destinationReco = "ERROR: nocoffee";
         $("#nocoffee").show();
           }
-      else if (ageInput < 16) {
+      else if (ageInput <= 16) {
         var destinationReco = "ERROR: kids";
         $("#kids").show();
         }
-      else if (ageInput > 75 && (activitiesInput==="Skiing" || activitiesInput==="Surfing")) {
+      else if (ageInput >= 75 && (activitiesInput==="Skiing" || activitiesInput==="Surfing")) {
         var destinationReco = "ERROR: safety";
         $("#safety").show();
         }
-      else if (ageInput > 75) {
+      else if (ageInput >= 75) {
         var destinationReco = "Ashland";
         $("#ashland").show();
         }
